@@ -1,18 +1,30 @@
 function NavBar() {
-    return (
-      <nav className="bg-gray-800 text-white p-4 sticky top-0 z-10">
-        <div className="container mx-auto flex justify-between items-center">
-          <h1 className="text-xl font-bold">My Portfolio</h1>
-          <div className="space-x-4">
-            <a href="#home" className="hover:text-gray-300">Home</a>
-            <a href="#resume" className="hover:text-gray-300">Resume</a>
-            <a href="#projects" className="hover:text-gray-300">Projects</a>
-            <a href="#challenges" className="hover:text-gray-300">Lab Challenges</a>
-            <a href="#contact" className="hover:text-gray-300">Contact</a>
-          </div>
+  return (
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <div className="container">
+        <a className="navbar-brand" href="#">My Portfolio</a>
+        <div className="collapse navbar-collapse">
+          <ul className="navbar-nav ml-auto">
+            <li className="nav-item">
+              <a className="nav-link" href="#home">Home</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#resume">Resume</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#projects">Projects</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#challenges">Lab Challenges</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
         </div>
-      </nav>
-    );
-  }
-  
-  export default NavBar;
+      </div>
+    </nav>
+  );
+}
+
+export default NavBar;
